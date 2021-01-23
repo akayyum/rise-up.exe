@@ -1,0 +1,17 @@
+{% extends "base.html" %}
+
+{% block content %}
+	<h1>Cyber Security Mentors</h1>
+	<h3> {{ my_help|striptags }}</h3>
+	<p>This page will show mentors for you to contact</p>
+	<h3>{{ title|capfirst|title }}</h3>
+
+
+<ul>
+{% for my_list_item in my_list %}
+
+	<li>{{for.loop.counter}} {{ my_list_item }}</li>
+	
+{% endfor %}
+</ul>
+{% endblock %}
