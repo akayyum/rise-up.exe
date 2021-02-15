@@ -8,10 +8,11 @@ def mentor(request):
 	context = {'mentors':mentors}
 	return render(request, 'mentor/mentor.html', context)
 
-def selected(request):
+def blog(request):
 	context = {}
-	return render(request, 'mentor/selected.html', context)
+	return render(request, 'mentor/blog.html', context)
 
 def guidance(request):
 	context = {}
 	return render(request, 'mentor/guidance.html', context)
+

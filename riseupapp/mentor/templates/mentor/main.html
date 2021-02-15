@@ -2,18 +2,22 @@
 
 <!DOCTYPE html>
 
-<head>
+<html lang="en">
+
 
 <!-- Code for rest of page -->
-	<title>Rise-up.exe</title>
-	<link rel="stylesheet" type="text/css" href="{% static 'css/main.css' %}">
-	
-	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1" />
+<!-- Meta Tags -->
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
 
+
+	<!-- Code for CSS -->
+	<link rel="stylesheet" type="text/css" href="{% static 'css/main.css' %}">
 	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
-
 	<link rel="stylesheet" type="text/css" href="{% static 'css/main.css' %}">
-
+  
+  <title>Rise-up.exe</title>
 </head>
 
 <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
@@ -36,34 +40,43 @@
       </li>
 
       <li class="nav-item">
-        <a class="nav-link" href="/selected">Blog</a>
+        <a class="nav-link" href="/blog">Blog</a>
       </li>
 
     </ul>
+
 
     <form class="form-inline my-2 my-lg-0">
       <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
       <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
     </form>
-
     <div class="form-inline my-2 my-lg-0">
     	<a href="#"class="btn btn-warning">Login</a>
-    	<a href="mentor/templates/selected.html">
+    	<a href="mentor/templates/blog.html">
     		<img src="{% static 'media/rise.png' %}" alt="My image">
     		</a>
         <p id="cart-total">0</p>
   </div>
 </nav>
+
+<body> 
+
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+
+</body>
+
         <hr>
 
          <div class="container">
                 <br>
+
                 {% block content %}
 
 
                  {% endblock content %}
          </div>
-
 
 
 </html>

@@ -2,20 +2,6 @@
 {% load static %}
 {% block content %}
 
-<head>
-
-<!-- Code for rest of page -->
-	<title>Rise-up.exe</title>
-	<link rel="stylesheet" type="text/css" href="{% static 'css/main.css' %}">
-	
-	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1" />
-
-	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
-
-	<link rel="stylesheet" type="text/css" href="{% static 'css/main.css' %}">
-
-</head>
-
 <div class="row">
   {% for mentor in mentors %}
   <div class="col-lg-3">
@@ -28,7 +14,7 @@
     <a class="btn btn-outline-success" href="#">{{mentor.expertise}}</a>
     <hr>
 
-    <button  class="btn btn-outline-secondary add-btn">Available: {{mentor.availability}}</button>
+    <button  class="btn btn-outline-secondary add-btn">Available: {{mentor.available}}</button>
     <!-- <a class="btn btn-outline-success" href="#"></a>
     <hr>
 
@@ -42,6 +28,7 @@
 </div>
   {% endfor %}
 </div>
+
 
 {% endblock content %}
 
