@@ -8,20 +8,36 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
 
+<center><h1><b>Cyber Security Career Pathways</b></h1></center>
+<hr>
+<center>
+  <i>
+    <h3>This page displays common security specialisms and details <b>key skills</b> to be successful in the role. Once clicked on the box, you can also be directed to <b>certifications</b> which may be useful on your Cyber Security journey!
+    </h3>
+  </i>
+</center>
+<hr>
+
+<!-- 1 -->
 <body>
 
-<div class="dropdown"> <button onclick="myFunction()" class="dropbtn">GRC Specialist</button>
-  <div id="myDropdown" class="dropdown-content">
+<div class="dropdown"> <button onclick="myFunction1()" class="dropbtn">Risk Specialist</button>
+  <div id="myDropdown1" class="dropdown-content">
+    <center>
     <a href="#">Focused</a>
     <a href="#">Prioritisation</a>
     <a href="#">Team Player</a>
+    <a href="#">Knowledge of Frameworks</a>
+    <a href="https://www.isaca.org/credentialing/crisc?cid=sem_2002376&Appeal=sem&gclid=EAIaIQobChMIsuXa69D_7gIV1uvtCh1ycAgPEAAYASAAEgKX-_D_BwE"
+           class="btn btn-danger">What Certifications?</a>
+  </center>
   </div>
 </div>
 
 <script>/* When the user clicks on the button,
 toggle between hiding and showing the dropdown content */
-function myFunction() {
-  document.getElementById("myDropdown").classList.toggle("show");
+function myFunction1() {
+  document.getElementById("myDropdown1").classList.toggle("show");
 }
 
 // Close the dropdown menu if the user clicks outside of it
@@ -38,8 +54,136 @@ window.onclick = function(event) {
   }
 }</script>
 </body>
-
-
 </html>
+
+<!-- 2 -->
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+
+<body>
+
+<div class="dropdown"> <button onclick="myFunction2()" class="dropbtn">Penetration Tester</button>
+  <div id="myDropdown2" class="dropdown-content">
+    <center>
+    <a href="#">Good Scripting Ability</a>
+    <a href="#">Understanding Web Technologies</a>
+    <a href="#">Knowledge of Vulnerabilities</a>
+    <a href="#">Sufficient Soft/Hard Skills</a>
+    <a href="https://www.offensive-security.com/pwk-oscp/"
+           class="btn btn-danger">What Certifications?</a>
+  </center>
+  </div>
+</div>
+
+<script>/* When the user clicks on the button,
+toggle between hiding and showing the dropdown content */
+function myFunction2() {
+  document.getElementById("myDropdown2").classList.toggle("show");
+}
+
+// Close the dropdown menu if the user clicks outside of it
+window.onclick = function(event) {
+  if (!event.target.matches('.dropbtn')) {
+    var dropdowns = document.getElementsByClassName("dropdown-content");
+    var i;
+    for (i = 0; i < dropdowns.length; i++) {
+      var openDropdown = dropdowns[i];
+      if (openDropdown.classList.contains('show')) {
+        openDropdown.classList.remove('show');
+      }
+    }
+  }
+}</script>
+</body>
+</html>
+
+<!-- 3 -->
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+
+<body>
+
+<div class="dropdown"> <button onclick="myFunction3()" class="dropbtn">CSOC Analyst</button>
+  <div id="myDropdown3" class="dropdown-content">
+    <center>
+    <a href="#">Ability to Prioritise</a>
+    <a href="#">Knowledge of Attacks</a>
+    <a href="#">Knowldge of SIEM</a>
+    <a href="#">Good Soft Skills</a>
+    <a href="https://www.comptia.org/certifications/cybersecurity-analyst"
+           class="btn btn-danger">What Certifications?</a>
+  </center>
+  </div>
+</div>
+
+<script>/* When the user clicks on the button,
+toggle between hiding and showing the dropdown content */
+function myFunction3() {
+  document.getElementById("myDropdown3").classList.toggle("show");
+}
+
+// Close the dropdown menu if the user clicks outside of it
+window.onclick = function(event) {
+  if (!event.target.matches('.dropbtn')) {
+    var dropdowns = document.getElementsByClassName("dropdown-content");
+    var i;
+    for (i = 0; i < dropdowns.length; i++) {
+      var openDropdown = dropdowns[i];
+      if (openDropdown.classList.contains('show')) {
+        openDropdown.classList.remove('show');
+      }
+    }
+  }
+}</script>
+</body>
+</html>
+
+<!-- 4 -->
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+
+<body>
+
+<div class="dropdown"> <button onclick="myFunction4()" class="dropbtn">AppSec Engineer</button>
+  <div id="myDropdown4" class="dropdown-content">
+    <center>
+    <a href="#">Knowledge of OWASP Top 10</a>
+    <a href="#">Scripting Ability</a>
+    <a href="#">Communication Skills</a>
+    <a href="#">Analysing Logs</a>
+    <a href="https://www.eccouncil.org/programs/application-security-training/"
+           class="btn btn-danger">What Certifications?</a>
+  </center>
+  </div>
+</div>
+
+<script>/* When the user clicks on the button,
+toggle between hiding and showing the dropdown content */
+function myFunction4() {
+  document.getElementById("myDropdown4").classList.toggle("show");
+}
+
+// Close the dropdown menu if the user clicks outside of it
+window.onclick = function(event) {
+  if (!event.target.matches('.dropbtn')) {
+    var dropdowns = document.getElementsByClassName("dropdown-content");
+    var i;
+    for (i = 0; i < dropdowns.length; i++) {
+      var openDropdown = dropdowns[i];
+      if (openDropdown.classList.contains('show')) {
+        openDropdown.classList.remove('show');
+      }
+    }
+  }
+}</script>
+</body>
+</html>
+
 
 {% endblock content %}

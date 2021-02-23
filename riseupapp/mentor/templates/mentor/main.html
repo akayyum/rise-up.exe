@@ -4,7 +4,6 @@
 
 <html lang="en">
 
-
 <!-- Code for rest of page -->
 <!-- Meta Tags -->
 <head>
@@ -18,6 +17,13 @@
 	<link rel="stylesheet" type="text/css" href="{% static 'css/main.css' %}">
   
   <title>Rise-up.exe</title>
+<style>
+    body
+    {        
+        padding-top: 0px;
+        padding-bottom: 100px;
+    }
+</style>
 </head>
 
 <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
@@ -46,17 +52,16 @@
     </ul>
 
 
-    <form class="form-inline my-2 my-lg-0">
+    <!-- <form class="form-inline my-2 my-lg-0">
       <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
       <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
-    </form>
-    <div class="form-inline my-2 my-lg-0">
-    	<a href="#"class="btn btn-warning">Login</a>
-    	<a href="mentor/templates/blog.html">
+    </form> -->
+   <div class="form-inline my-2 my-lg-0">
+    	<a href="/register"class="btn btn-warning">Register To Become a Mentor!</a>
+      <a href="mentor/templates/register.html">
     		<img src="{% static 'media/rise.png' %}" alt="My image">
-    		</a>
-        <p id="cart-total">0</p>
-  </div>
+    	</a>
+    </div>
 </nav>
 
 <body> 
@@ -78,5 +83,5 @@
                  {% endblock content %}
          </div>
 
-
 </html>
+

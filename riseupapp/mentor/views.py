@@ -16,3 +16,6 @@ def guidance(request):
 	context = {}
 	return render(request, 'mentor/guidance.html', context)
 
+def register(request):
+	context = {}
+	return render(request, 'mentor/register.html', context)

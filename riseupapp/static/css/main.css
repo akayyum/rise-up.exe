@@ -36,17 +36,6 @@ h1,h2,h3,h4,h5,h6{
   margin-left: 15px;
 }
 
-#cart-total{
-  display: block;
-  text-align: center;
-  color:#fff;
-  background-color: purple;
-  width: 20px;
-  height: 25px;
-  border-radius: 50%;
-  font-size: 14px;
-}
-
 .col-lg-4, .col-lg-6, .col-lg-8, .col-lg-12{
   margin-top: 10px;
 }
@@ -74,28 +63,9 @@ h1,h2,h3,h4,h5,h6{
 
 }
 
-.quantity{
-  display: inline-block;
-  font-weight: 700;
-  padding-right:10px;
-  
 
-}
-
-.chg-quantity{
-  width: 12px;
-  cursor: pointer;
-  display: block;
-  margin-top: 5px;
-  transition:.1s;
-}
-
-.chg-quantity:hover{
-  opacity: .6;
-}
-
-
-.hidden{
+.hidden
+{
   display: none!important;
 }
 
@@ -110,7 +80,7 @@ h1,h2,h3,h4,h5,h6{
 
 /* Dropdown Button */
 .dropbtn {
-  background-color: #777777;
+  background-color: #DAA520;
   color: white;
   padding: 30px;
   font-size: 30px;
@@ -120,8 +90,9 @@ h1,h2,h3,h4,h5,h6{
 
 /* Dropdown button on hover & focus */
 .dropbtn:hover, .dropbtn:focus {
-  background-color: #273920;
+  background-color: #00CED1;
 }
+
 
 /* The container <div> - needed to position the dropdown content */
 .dropdown {
@@ -147,8 +118,17 @@ h1,h2,h3,h4,h5,h6{
   display: block;
 }
 
+
 /* Change color of dropdown links on hover */
-.dropdown-content a:hover {background-color: #837384}
+.dropdown-content a:hover {background-color: #DAA520}
 
 /* Show the dropdown menu (use JS to add this class to the .dropdown-content container when the user clicks on the dropdown button) */
 .show {display:block;}
+
+.divider{
+    width:5px;
+    height:auto;
+    display:inline-block;
+}
+
+
