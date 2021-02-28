@@ -26,8 +26,22 @@
 </style>
 </head>
 
+<style>
+     .hello-msg{
+          font-size: 18px;
+          color: #fff;
+          margin-right: 20px;
+        }
+</style>
+
 <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-  <a class="navbar-brand" href="/home">Rise-up.exe</a>
+      <a href="mentor/templates/register.html">
+        <img src="{% static 'media/rise.png' %}" alt="My image">
+      </a>
+
+      &nbsp;&nbsp;
+
+  <a class="navbar-brand" href="/home"><b><i>Rise-up.exe</i></b></a>
  
   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
     <span class="navbar-toggler-icon"></span>
@@ -58,10 +72,14 @@
     </form> -->
    <div class="form-inline my-2 my-lg-0">
     	<a href="/register"class="btn btn-warning">Register To Become a Mentor!</a>
-      <a href="mentor/templates/register.html">
-    		<img src="{% static 'media/rise.png' %}" alt="My image">
-    	</a>
     </div>
+
+            &nbsp;&nbsp;&nbsp;&nbsp;
+
+
+    <span class="hello-msg">Welcome, {{request.user}}</span>
+    <a class="btn btn-outline-success" href="{% url 'logout' %}">Logout</a>
+    
 </nav>
 
 <body> 
