@@ -1,0 +1,26 @@
+{% extends 'mentor/main.html' %}
+{% load static %}
+
+{% block content %}
+<center>
+<h1>Welcome to <b>Rise-up.exe</b>, a mentor & guidance platform!</h1>
+<hr>
+
+<h1><b style="color:white">-About This Platform-</b></h1>
+
+<h3><i>This platform has been designed to bridge the gap in diversity, inclusion and skills. <b>Rise.up.exe</b> introduces you to a wide range of cyber mentors, skills advise for career specialisation & general tips through a blog.</i></h3>
+<hr> 
+&nbsp;
+
+<h5>If you require personalised advise from real people with diverse backgrounds, then reach out to our mentors who are skilled across a variety of areas within cyber security.</h5>
+<a class="btn btn-outline-success" href="{% url 'mentor' %}">Cyber Security Mentors</a> <hr> 
+
+<h5>Don't know what skills are required for your dream cyber role?<br>Click below and learn more about the key skills needed within the common cyber roles!</h5>
+<a class="btn btn-outline-success" href="{% url 'guidance' %}">Career Specialisation</a> <hr>
+
+<h5>Check out our guidance blog which will give you a better feel for the industry.</h5>
+<a class="btn btn-outline-success" href="{% url 'blog' %}">Career Guidance & Blog</a> 
+{% endblock content %}
+</center>
+
+&nbsp;&nbsp;&nbsp;&nbsp;
