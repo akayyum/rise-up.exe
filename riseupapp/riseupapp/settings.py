@@ -28,7 +28,7 @@ DEBUG = True
 ALLOWED_HOSTS = []
 
 
-# Application definition
+# Here is the setting which is configured to allow Django to recognise the creation of the app (Mentor)
 
 INSTALLED_APPS = [
     'django.contrib.admin',
@@ -50,6 +50,8 @@ MIDDLEWARE = [
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
 ]
+
+# This url path links to riseup/urls.py. This is where the url paths for the website are located.
 
 ROOT_URLCONF = 'riseupapp.urls'
 
@@ -118,6 +120,8 @@ USE_TZ = True
 
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/2.1/howto/static-files/
+
+# Code for getting the images and design layout ready for the website. 
 
 STATIC_URL = '/static/'
 STATIC_ROOT = os.path.join(BASE_DIR, 'riseupapp/static_env')

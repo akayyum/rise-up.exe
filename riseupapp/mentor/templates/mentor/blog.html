@@ -107,72 +107,82 @@ img {vertical-align: middle;}*/
 }
 </style>
 </head>
+
 <body>
+  <center>
+    <h1><b style="color:white">General Guidance & Blog</b></h1><hr>
+      <i><h3>Just here to learn more about security?<br>Look at some interesting articles below to give you a better feel of the industry!</h3></i>
+  </center>
+  <hr>
+</body>
 
-<div class="slideshow-container">
 
-<div class="mySlides fade">
-  <div class="numbertext">1 / 3</div>
-  <img src="{% static 'media/skills.png' %}" style="width:100%">
-  <div class="text">Industry Skills</div>
-</div>
+<body>
+  <div class="slideshow-container">
 
-<div class="mySlides fade">
-  <div class="numbertext">2 / 3</div>
-  <img src="{% static 'media/prod.png' %}" style="width:100%">
-  <div class="text">How to Stay Productive!</div>
-</div>
+    <div class="mySlides fade">
+      <div class="numbertext">1 / 3</div>
+        <img src="{% static 'media/skills.png' %}" style="width:100%">
+      <div class="text">Industry Skills</div>
+    </div>
 
-<div class="mySlides fade">
-  <div class="numbertext">3 / 3</div>
-  <img src="{% static 'media/challenge.jpg' %}" style="width:100%">
-  <div class="text">Challenges faced in Cyber</div>
-</div>
+  <div class="mySlides fade">
+    <div class="numbertext">2 / 3</div>
+      <img src="{% static 'media/prod.png' %}" style="width:100%">
+    <div class="text">How to Stay Productive!</div>
+  </div>
 
-<a class="prev" onclick="plusSlides(-1)">❮</a>
-<a class="next" onclick="plusSlides(1)">❯</a>
+  <div class="mySlides fade">
+    <div class="numbertext">3 / 3</div>
+      <img src="{% static 'media/challenge.jpg' %}" style="width:100%">
+    <div class="text">Challenges faced in Cyber</div>
+  </div>
 
-</div>
+  <a class="prev" onclick="plusSlides(-1)">❮</a>
+  <a class="next" onclick="plusSlides(1)">❯</a>
+
+  </div>
+
 <br>
 
-<div style="text-align:center">
-  <span class="dot" onclick="currentSlide(1)"></span> 
-  <span class="dot" onclick="currentSlide(2)"></span> 
-  <span class="dot" onclick="currentSlide(3)"></span> 
-</div>
+  <div style="text-align:center">
+    <span class="dot" onclick="currentSlide(1)"></span> 
+    <span class="dot" onclick="currentSlide(2)"></span> 
+    <span class="dot" onclick="currentSlide(3)"></span> 
+  </div>
 
 <script>
-var slideIndex = 1;
-showSlides(slideIndex);
+  var slideIndex = 1;
+  showSlides(slideIndex);
 
-function plusSlides(n) {
-  showSlides(slideIndex += n);
-}
-
-function currentSlide(n) {
-  showSlides(slideIndex = n);
-}
-
-function showSlides(n) {
-  var i;
-  var slides = document.getElementsByClassName("mySlides");
-  var dots = document.getElementsByClassName("dot");
-  if (n > slides.length) {slideIndex = 1}    
-  if (n < 1) {slideIndex = slides.length}
-  for (i = 0; i < slides.length; i++) {
-      slides[i].style.display = "none";  
+  function plusSlides(n) {
+    showSlides(slideIndex += n);
   }
-  for (i = 0; i < dots.length; i++) {
-      dots[i].className = dots[i].className.replace(" active", "");
+
+  function currentSlide(n) {
+    showSlides(slideIndex = n);
   }
-  slides[slideIndex-1].style.display = "block";  
-  dots[slideIndex-1].className += " active";
-}
+
+  function showSlides(n) {
+    var i;
+    var slides = document.getElementsByClassName("mySlides");
+    var dots = document.getElementsByClassName("dot");
+    if (n > slides.length) {slideIndex = 1}    
+    if (n < 1) {slideIndex = slides.length}
+    for (i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none";  
+    }
+    for (i = 0; i < dots.length; i++) {
+        dots[i].className = dots[i].className.replace(" active", "");
+    }
+    slides[slideIndex-1].style.display = "block";  
+    dots[slideIndex-1].className += " active";
+  }
 </script>
 
 
 </body>
-</html> 
+
 
 <style>
         .card{
@@ -182,14 +192,14 @@ function showSlides(n) {
 </style>
 
 <div class="col-md-4 float-right ">
-<div class="card my-4">
-        <h5 class="card-header">Challenges for Cyber in 2021</h5>
+  <div class="card my-4">
+   <h5 class="card-header">Challenges for Cyber in 2021</h5>
     <div class="card-body">
         <p class="card-text"> As technology advances, so does the sophistication of cyber-criminal attacks. We need to be aware and prepared for the unexpected</p>
         <a href="https://www.securitymagazine.com/gdpr-policy?url=https%3A%2F%2Fwww.securitymagazine.com%2Farticles%2F94263-future-security-career-challenges-in-2021-and-beyond"
            class="btn btn-danger">Challenges of Cyber</a>
     </div>
-</div>
+  </div>
 </div>
 
 <style>
@@ -201,14 +211,14 @@ function showSlides(n) {
 
 <!-- Sidebar Widgets Column -->
 <div class="col-md-4 float-right ">
-<div class="card my-4">
-        <h5 class="card-header">Staying Productive in Your Role</h5>
+  <div class="card my-4">
+   <h5 class="card-header">Staying Productive in Your Role</h5>
     <div class="card-body">
         <p class="card-text"> Sometimes within security, heavy work may lead to an un-balanced work/life cycle which ultimately affects productivity. See how to prevent this below!</p>
         <a href="https://www.lifehack.org/articles/work/stay-ultra-productive-at-work.html"
            class="btn btn-danger">Producitivity Tips</a>
     </div>
-</div>
+  </div>
 </div>
 
 <style>
@@ -220,14 +230,17 @@ function showSlides(n) {
 
 <!-- Sidebar Widgets Column -->
 <div class="col-md-4 float-right ">
-<div class="card my-4">
-        <h5 class="card-header">Key Skills for Cyber</h5>
+  <div class="card my-4">
+    <h5 class="card-header">Key Skills for Cyber</h5>
     <div class="card-body">
         <p class="card-text"> With the Cyber Security industry growing at a rapid pace, click below to understand some key skills & requirements that may be required.</p>
         <a href="https://www.prospects.ac.uk/job-profiles/cyber-security-analyst"
            class="btn btn-danger">Requirements for Cyber Roles</a>
     </div>
+  </div>
+<br/><br/><br/>
 </div>
-</div>
+
+
 
 {% endblock content %}

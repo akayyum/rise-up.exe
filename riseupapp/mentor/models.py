@@ -1,6 +1,7 @@
 from django.db import models
 
-# Create your models here.
+# This deals with taking the necessary information regarding the cyber mentors.
+# This information is then populated automatically in the mentor webpage.
 
 class Mentor(models.Model):
 	name 			= models.CharField(max_length=200, null=True)

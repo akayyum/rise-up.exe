@@ -35,32 +35,30 @@
 </style>
 
 <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-      <a href="mentor/templates/register.html">
+      <a href="/home">
         <img src="{% static 'media/rise.png' %}" alt="My image">
       </a>
 
-      &nbsp;&nbsp;
-
-  <a class="navbar-brand" href="/home"><b><i>Rise-up.exe</i></b></a>
+     
+  <a class="navbar-brand" href="/about"><b><i>Rise-up.exe</i></b></a>
  
   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
     <span class="navbar-toggler-icon"></span>
   </button>
 
-
+<!-- The navigation bar has 3 buttons which direct users to other html pages -->
   <div class="collapse navbar-collapse" id="navbarSupportedContent">
     <ul class="navbar-nav mr-auto">
       <li class="nav-item active"> 
-        <a class="nav-link" href="/home">Cyber Mentors <span class="sr-only">(current)</span></a>
-      </li>
+        <a class="nav-link" href="/home">| Cyber Mentors |<span class="sr-only">(current)</span></a>
       </li>
 
       <li class="nav-item active"> 
-        <a class="nav-link" href="/guidance">Security Pathways <span class="sr-only">(current)</span></a>
+        <a class="nav-link" href="/guidance">| Security Pathways |<span class="sr-only">(current)</span></a>
       </li>
 
       <li class="nav-item">
-        <a class="nav-link" href="/blog">Blog</a>
+        <a class="nav-link" href="/blog">| Blog |</a>
       </li>
 
     </ul>
@@ -71,12 +69,12 @@
       <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
     </form> -->
    <div class="form-inline my-2 my-lg-0">
-    	<a href="/register"class="btn btn-warning">Register To Become a Mentor!</a>
-    </div>
+    	<a href="/about"class="btn btn-warning">Learn more about this platform?</a>
+   </div>
 
             &nbsp;&nbsp;&nbsp;&nbsp;
 
-
+<!-- Once the user logs in, this code will allow their name to be displayed in the top right corner -->
     <span class="hello-msg">Welcome, {{request.user}}</span>
     <a class="btn btn-outline-success" href="{% url 'logout' %}">Logout</a>
     
@@ -95,11 +93,56 @@
          <div class="container">
                 <br>
 
+
+
                 {% block content %}
 
 
                  {% endblock content %}
          </div>
 
+</html>
+
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<style>
+    /* Add some padding on document's body to prevent the content
+    to go underneath the header and footer */
+    body{        
+        padding-top: 0px;
+        padding-bottom: 40px;
+    }
+    .fixed-footer{
+        width: 100%;
+        position: fixed;        
+        background: #333;
+        padding: 10px 0;
+        color: #fff;
+    }
+    .fixed-footer{
+        bottom: 0;
+    }
+    .container{
+        width: 80%;
+        margin: 0 auto; /* Center the DIV horizontally */
+    }
+    nav a{
+        color: #fff;
+        text-decoration: none;
+        padding: 7px 25px;
+        display: inline-block;
+    }
+</style>
+</head>
+
+
+
+<body>    
+    <div class="fixed-footer">
+        <div class="container">Copyright &copy; 2021 Rise-up.exe &nbsp;&nbsp; <a href="#">Contact Us</a></div>
+                        
+    </div>
+</body>
 </html>
 

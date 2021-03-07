@@ -1,41 +1,32 @@
 {% extends 'mentor/main.html' %}
 {% load static %}
 {% block content %}
-<center>
-<h1>Welcome to <b>Rise-up.exe</b>, a mentor & guidance platform!</h1>
-<hr>
-<i><h3>This page displays Cyber Security professionals, categorised mainly by their location of <b>upbringing</b>, what <b>certifications</b> they have gained & also their area of <b>specialism</b>.</h3></i>
-</center>
-<hr>
+
+<body>
+  <center>
+    <h1><b style="color:white">Cyber Security Mentors</b></h1> <hr>
+      <i><h3>This page displays Cyber Security professionals, categorised mainly by their location of <b>upbringing</b>, what <b>certifications</b> they have gained & also their area of <b>specialism</b>.</h3></i>
+  </center>
+  <hr>
+</body>
+
 
 <div class="row">
+  <!-- This extracts the mentors registered in the backend(admin) and inputs them automatically -->
   {% for mentor in mentors %}
-  <div class="col-lg-3">
-  <img class="thumbnail" src="{% static 'media/user.png' %}">
-  <div class="box-element mentor">
-   <center><h6><strong>{{mentor.name}}</strong></h6></center>
+    <div class="col-lg-3">
+      <img class="thumbnail" src="{% static 'media/user.png' %}">
+    <div class="box-element mentor">
+ <center><h6><strong>{{mentor.name}}</strong></h6></center>
     <hr>
 
     <button  class="btn btn-outline-secondary add-btn">{{mentor.upbringing}}</button>
-    <a class="btn btn-outline-success" href="#">Area of Specialism: {{mentor.expertise}}</a>
+      <a class="btn btn-outline-success" href="#">Area of Specialism: {{mentor.expertise}}</a>
     <button  class="btn btn-outline-secondary add-btn">Certifications Gained: {{mentor.certifications}}</button>
 <hr>
     <button  class="btn btn-outline-secondary add-btn">Available to contact? {{mentor.available}}</button>
-    <a class="btn btn-outline-success" href="#">Contact: {{mentor.email}}</a>
-    
-
-    
-    <!-- <a class="btn btn-outline-success" href="#"></a>
-    <hr>
-
-    <button  class="btn btn-outline-secondary add-btn">{{mentor.available}}</button>
-    <a class="btn btn-outline-success" href="#">Available: {{mentor.availablity}}</a>
-    <button><h4><strong>Available</strong></h4></button>
-
-    <h4 style="display: inline-flex; float: right"><strong>Available</strong></h4> -->
-
-  </div>
-
+      <a class="btn btn-outline-success" href="#">Contact: {{mentor.email}}</a>
+    </div>
 <hr>
 </div>
 

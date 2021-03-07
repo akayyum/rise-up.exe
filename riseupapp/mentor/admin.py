@@ -1,6 +1,6 @@
 from django.contrib import admin
 
-# Register your models here.
+# This registers the models and initialises data for the database backend.
 from .models import *
 
 admin.site.register(Mentor)

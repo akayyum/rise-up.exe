@@ -18,6 +18,8 @@ from django.urls import path, include
 from django.conf import settings
 from django.conf.urls.static import static
 
+# These URL patterns list the URLs to views.py which links to the correct html pages.
+
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('', include('mentor.urls')),
