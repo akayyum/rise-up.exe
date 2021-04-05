@@ -1,7 +1,6 @@
 {% extends 'mentor/main.html' %}
 {% load static %}
 {% block content %}
-
 <body>
   <center>
     <h1><b style="color:white">Cyber Security Mentors</b></h1> <hr>
@@ -10,6 +9,43 @@
   <hr>
 </body>
 
+
+<script src="https://cdn.jsdelivr.net/npm/chart.js@2.9.4"></script>
+
+<canvas id="chart" width="800" height="300"></canvas>
+
+<script> let ctx = document.getElementById("chart").getContext("2d");
+
+let chart = new Chart(ctx, {
+  type: "bar",
+  data: {
+     labels: ["Newham (37%)", "Hackney (36%)", "Tower Hamlets (39%)", "Haringey (34%)", "Islington (33%)"],
+     datasets: [
+        {
+          label: "Rate of Individual Poverty (%)",
+          backgroundColor: "#20B2AA",
+          borderColor: "#417690",
+          data: [37, 36, 39, 34, 33]
+        }
+     ]
+  },
+  options: {
+     title: {
+        text: "Top 5 London Borough Poverty Rates",
+        display: true
+     }
+  }
+});
+</script>
+<!-- Source https://codepen.io/mjhea0/pen/wvogmJy -->
+
+<center><i><h5>The graph above highlights boroughs with the highest rate of <b>individual poverty</b>. One aim of this platform is to reduce the rate of inequality through displaying cyber mentors who came from deprived areas, but made successful careers in security. Hopefully, they can provide you with support and enjoy similar successes.</h5></i></center>
+<center><i><p>Source: https://www.trustforlondon.org.uk/data/poverty-borough/</p></i></center>
+
+<hr>
+
+<center><h1><b style="color:white">Mentor Details</b></h1><center>
+  <hr>
 
 <div class="row">
   <!-- This extracts the mentors registered in the backend(admin) and inputs them automatically -->
